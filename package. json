@@ -1,0 +1,22 @@
+{
+  "name": "atms-autotec",
+  "version": "1.0.0",
+  "description": "ATMS – Autotec Multiservices",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.autotec.atms",
+    "productName": "ATMS Autotec",
+    "files": ["index.html", "main.js"],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
